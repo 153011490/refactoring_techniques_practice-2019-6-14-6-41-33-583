@@ -40,7 +40,7 @@ public class OwingPrinterTest {
 
         //when
         owingPrinter.printOwing(name,orders);
-        String expected="*****************************\r\n"+"****** Customer totals ******\r\n"+"*****************************\r\n"+"name: Mike\r\n"+"amount: 20.0\r\n";
+        String expected="*****************************\r\n"+"****** Customer totals ******\r\n"+"*****************************\r\n"+"name: Mike\r\n"+"amount: 20.0";
 
         //then
         assertEquals(expected,outContent.toString());

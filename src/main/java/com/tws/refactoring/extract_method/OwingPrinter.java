@@ -11,8 +11,7 @@ public class OwingPrinter {
 
         printBanner();
         // print details
-        System.out.println("name: " + name);
-        System.out.println("amount: " + outstanding);
+        System.out.print("name: " + name+"\r\namount: " + outstanding);
     }
 
     public double calculateAmount(Iterator<Order> elements){
@@ -25,9 +24,7 @@ public class OwingPrinter {
     }
 
     public void printBanner(){
-        System.out.println ("*****************************");
-        System.out.println ("****** Customer totals ******");
-        System.out.println ("*****************************");
+        System.out.println ("*****************************\r\n"+"****** Customer totals ******\r\n"+"*****************************");
     }
 }
 
